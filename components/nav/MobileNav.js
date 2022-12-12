@@ -33,7 +33,7 @@ export default function MobileNav({ isNavOpen, setIsNavOpen }) {
 					</div>
 					<Link
 						href="/"
-						className="py-2 hover:tracking-widest text-[15px] transition-all duration-300 ease-linear pl-4"
+						className="py-2 hover:tracking-widest text-[15px] transition-all duration-300 ease-linear pl-4 mt-4"
 						onClick={() => setIsNavOpen(false)}
 					>
 						Home

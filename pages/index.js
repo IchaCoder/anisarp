@@ -13,6 +13,17 @@ export default function Home() {
 
 			<main className="">
 				<Nav />
+				<section className="max-w-[90%] md:max-w-[80%] mx-auto">
+					<div>
+						<h1 className="text-5xl font-bold">
+							Architecture that recognizes all your sensibilities
+						</h1>
+						<h3>
+							Welcome to Anisarp a reliable business partner on your path to
+							building a better looking future for all
+						</h3>
+					</div>
+				</section>
 			</main>
 			<footer>
 				<a

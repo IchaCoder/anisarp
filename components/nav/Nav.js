@@ -12,7 +12,9 @@ export default function Nav() {
 		<>
 			<nav className="flex justify-around bg-primary p-2 text-whiteF">
 				<div className="flex">
-					<Image src="/logo.jpg" alt="anisarp" width="100" height="50" />{" "}
+					<Link href={"/"}>
+						<Image src="/logo.jpg" alt="anisarp" width="100" height="50" />
+					</Link>
 					<span className="font-extrabold self-center text-2xl sm:text-3xl tracking-widest">
 						ANISARP
 					</span>
