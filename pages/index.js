@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+import Hero from "../components/hero/Hero";
 import Nav from "../components/nav/Nav";
+import SliderSection from "../components/slider/SliderSection";
 
 export default function Home() {
 	return (
@@ -13,17 +16,8 @@ export default function Home() {
 
 			<main className="">
 				<Nav />
-				<section className="max-w-[90%] md:max-w-[80%] mx-auto">
-					<div>
-						<h1 className="text-5xl font-bold">
-							Architecture that recognizes all your sensibilities
-						</h1>
-						<h3>
-							Welcome to Anisarp a reliable business partner on your path to
-							building a better looking future for all
-						</h3>
-					</div>
-				</section>
+				<Hero />
+				<SliderSection />
 			</main>
 			<footer>
 				<a
