@@ -20,6 +20,11 @@ export default function Home() {
 				<Hero />
 				<SliderSection />
 				<Services />
+				<section className="mt-32">
+					<h2>
+						Check Out Our <br /> <span>Beautify Gallery</span>
+					</h2>
+				</section>
 			</main>
 			<footer>
 				<a
