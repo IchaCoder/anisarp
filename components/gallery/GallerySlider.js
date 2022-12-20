@@ -7,11 +7,11 @@ import settings from "./settings";
 
 const GallerySlider = () => {
 	return (
-		<div className="mt-20">
+		<div className="mt-8">
 			<Slider className="mx-auto p-4" {...settings}>
-				{items.map((item, index) => (
+				{items.slice(0, 5).map((item, index) => (
 					<div key={index}>
-						<div className="m-4 shadow-xl rounded bg-white">
+						<div className="sm:m-4 shadow-xl rounded bg-white">
 							<Image
 								src={item.imageUrl}
 								alt="planning"

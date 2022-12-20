@@ -17,12 +17,10 @@ const Hero = () => (
 				</button>
 			</Link>
 		</div>
-		<Image
+		<img
 			src="/hero_img.jpeg"
 			alt="building"
-			width="600"
-			className="-mr-36"
-			height="700"
+			className="-mr-36 w-full lg:w-[600px] h-max"
 		/>
 	</section>
 );
