@@ -5,6 +5,7 @@ import Hero from "../components/hero/Hero";
 import Nav from "../components/nav/Nav";
 import Services from "../components/service/Services";
 import SliderSection from "../components/slider/SliderSection";
+import Gallery from "../components/gallery/Gallery";
 
 export default function Home() {
 	return (
@@ -20,11 +21,7 @@ export default function Home() {
 				<Hero />
 				<SliderSection />
 				<Services />
-				<section className="mt-32">
-					<h2>
-						Check Out Our <br /> <span>Beautify Gallery</span>
-					</h2>
-				</section>
+				<Gallery />
 			</main>
 			<footer>
 				<a
