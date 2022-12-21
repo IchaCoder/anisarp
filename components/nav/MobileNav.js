@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { AiOutlineClose } from "react-icons/ai";
@@ -40,28 +39,28 @@ export default function MobileNav({ isNavOpen, setIsNavOpen }) {
 					</Link>
 
 					<Link
-						href="#footer"
+						href="#services"
+						className="py-2 text-[15px] hover:tracking-widest transition-all duration-300 ease-linear pl-4"
+						onClick={() => setIsNavOpen(false)}
+					>
+						Services
+					</Link>
+					<Link
+						href="#gallery"
 						className="py-2 text-[15px] hover:tracking-widest transition-all duration-300 ease-linear pl-4"
 						onClick={() => setIsNavOpen(false)}
 					>
 						Gallery
 					</Link>
 					<Link
-						href="#footer"
+						href="#contact"
 						className="py-2 text-[15px] hover:tracking-widest transition-all duration-300 ease-linear pl-4"
 						onClick={() => setIsNavOpen(false)}
 					>
-						Projects
+						Contact
 					</Link>
 					<Link
-						href="#footer"
-						className="py-2 text-[15px] hover:tracking-widest transition-all duration-300 ease-linear pl-4"
-						onClick={() => setIsNavOpen(false)}
-					>
-						Gallery
-					</Link>
-					<Link
-						href="#footer"
+						href="#about"
 						className="py-2 text-[15px] hover:tracking-widest transition-all duration-300 ease-linear pl-4"
 						onClick={() => setIsNavOpen(false)}
 					>

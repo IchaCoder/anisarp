@@ -6,7 +6,10 @@ export default function () {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 
 	return (
-		<section className="mt-32 max-w-[90%] md:max-w-[80%] sm:mt-80 lg:mt-32 mx-auto p-4 bg-gray-200">
+		<section
+			id="gallery"
+			className="mt-32 max-w-[90%] md:max-w-[80%] sm:mt-80 lg:mt-32 mx-auto p-4 bg-gray-200"
+		>
 			<div className="sm:flex justify-between">
 				<div>
 					<h2 className="text-4xl base:5xl font-semibold ml-8 mt-4">

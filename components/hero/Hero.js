@@ -11,8 +11,8 @@ const Hero = () => (
 				Welcome to Anisarp, a reliable business partner on your path to building
 				a better looking future for all.
 			</h3>
-			<Link href={"/"}>
-				<button className="bg-primary text-white font-semibold rounded-sm p-4 mt-8">
+			<Link href={"#contact"}>
+				<button className="bg-primary hover:text-primary hover:bg-white button hover:border border-solid border-primary text-white font-semibold rounded-sm p-4 mt-8">
 					Make an Enquiry
 				</button>
 			</Link>

@@ -38,7 +38,7 @@ const ContactUs = () => {
 					<FaInstagram />{" "}
 				</a>
 			</div>
-			<p className="text-center sm:text-left text-black pt-4">
+			<p className="text-center sm:text-left text-black pt-4 ">
 				&copy; Copyright {new Date().getFullYear()}
 			</p>
 		</div>

@@ -13,7 +13,7 @@ export default function Nav() {
 			<nav className="flex justify-around bg-primary p-2 text-whiteF">
 				<div className="flex">
 					<Link href={"/"}>
-						<Image src="/logo.jpg" alt="anisarp" width="100" height="50" />
+						<Image src="/logo.png" alt="anisarp" width="100" height="50" />
 					</Link>
 					<span className="font-extrabold self-center text-2xl sm:text-3xl tracking-widest">
 						ANISARP
@@ -46,7 +46,7 @@ export default function Nav() {
 					</Link>
 					<Link
 						className="px-3 hover:text-[rgba(255,255,255,.5)] transition-all duration-200 ease-linear"
-						href="#contact"
+						href="#about"
 					>
 						About
 					</Link>

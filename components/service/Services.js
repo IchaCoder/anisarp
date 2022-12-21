@@ -4,7 +4,10 @@ import Link from "next/link";
 export default function Services() {
 	return (
 		<>
-			<section className="max-w-[90%] md:max-w-[80%] mx-auto mt-32 lg:flex flex-row-reverse relative">
+			<section
+				id="about"
+				className="max-w-[90%] md:max-w-[80%] mx-auto mt-32 lg:flex flex-row-reverse relative"
+			>
 				<Image
 					src="/assets/service_8.jpeg"
 					alt="architecture"
