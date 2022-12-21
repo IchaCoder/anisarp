@@ -1,17 +1,12 @@
 import Link from "next/link";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FiMenu } from "react-icons/fi";
 import Image from "next/image";
-import MobileNav from "./MobileNav";
-import { useState } from "react";
+import { TbBrandNextjs } from "react-icons/tb";
 
-export default function Nav() {
-	const [isNavOpen, setIsNavOpen] = useState(false);
-
+const Footer = () => {
 	return (
 		<>
-			<nav className="flex justify-around bg-primary p-2 text-whiteF">
-				<div className="flex">
+			<footer className="p-8 bg-[rgb(49,49,49)] flex flex-col md:flex-row gap-8 justify-between text-white">
+				<div className="flex justify-center md:justify-start">
 					<Link href={"/"}>
 						<Image src="/logo.png" alt="anisarp" width="100" height="50" />
 					</Link>
@@ -19,7 +14,7 @@ export default function Nav() {
 						ANISARP
 					</span>
 				</div>
-				<div className="self-center hidden md:inline">
+				<div className="self-center grid grid-cols-3 gap-4 sm:grid-cols-5">
 					<Link
 						className="px-3 hover:text-[rgba(255,255,255,.5)] transition-all duration-200 ease-linear"
 						href="/"
@@ -51,18 +46,38 @@ export default function Nav() {
 						About
 					</Link>
 				</div>
+			</footer>
+			<div className="flex flex-col text-lg flex-wrap gap-2 p-2">
 				<a
-					href="tel:+233246251086"
-					className="hidden md:flex items-center hover:tracking-wide transition-all duration-200 ease-linear"
+					href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="flex self-center"
 				>
-					<FaPhoneAlt /> +233-246-251-086
+					Powered by{" "}
+					<span>
+						<Image
+							src="/vercel.svg"
+							alt="Vercel Logo"
+							className="ml-2 inline"
+							width={72}
+							height={16}
+						/>
+					</span>
 				</a>
-				<FiMenu
-					className="md:hidden text-3xl self-center cursor-pointer flex"
-					onClick={() => setIsNavOpen(true)}
-				/>
-			</nav>
-			<MobileNav isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+
+				<div className="self-center flex">
+					Made with{" "}
+					<span
+						className="ml-2 flex items-center text-2xl cursor-pointer"
+						title="NextJs"
+					>
+						<TbBrandNextjs />
+					</span>{" "}
+				</div>
+			</div>
 		</>
 	);
-}
+};
+
+export default Footer;

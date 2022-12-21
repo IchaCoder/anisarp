@@ -1,10 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 import Hero from "../components/hero/Hero";
 import Nav from "../components/nav/Nav";
 import Services from "../components/service/Services";
 import SliderSection from "../components/slider/SliderSection";
+import Gallery from "../components/gallery/Gallery";
+import NewsLetter from "../components/contact/NewsLetter";
+import ContactUs from "../components/contact/ContactUs";
+import Footer from "../components/footer/Footer";
+import ScrollToTop from "../components/scroll-to-top/ScrollToTop";
 
 export default function Home() {
 	return (
@@ -20,24 +24,16 @@ export default function Home() {
 				<Hero />
 				<SliderSection />
 				<Services />
-				<section className="mt-32">
-					<h2>
-						Check Out Our <br /> <span>Beautify Gallery</span>
-					</h2>
+				<Gallery />
+				<section className="mt-32 mb-20 bg-gradient-cc" id="contact">
+					<div className="max-w-[90%] md:max-w-[80%] mx-auto flex flex-col sm:flex-row gap-8 md:gap-14 justify-between pb-8">
+						<NewsLetter />
+						<ContactUs />
+					</div>
 				</section>
 			</main>
-			<footer>
-				<a
-					href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Powered by{" "}
-					<span>
-						<Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-					</span>
-				</a>
-			</footer>
+			<Footer />
+			<ScrollToTop />
 		</div>
 	);
 }

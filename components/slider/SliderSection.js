@@ -8,7 +8,7 @@ import items from "./data";
 
 export default function SliderSection() {
 	return (
-		<div className="mt-20  bg-gray-200">
+		<div className="mt-20 bg-gray-200" id="services">
 			<Slider className=" mx-auto p-4" {...settings}>
 				{items.map((item, index) => (
 					<Card name={item.name} imageUrl={item.imageUrl} key={index} />

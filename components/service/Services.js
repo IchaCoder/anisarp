@@ -4,7 +4,10 @@ import Link from "next/link";
 export default function Services() {
 	return (
 		<>
-			<section className="max-w-[90%] md:max-w-[80%] mx-auto mt-32 lg:flex flex-row-reverse relative">
+			<section
+				id="about"
+				className="max-w-[90%] md:max-w-[80%] mx-auto mt-32 lg:flex flex-row-reverse relative"
+			>
 				<Image
 					src="/assets/service_8.jpeg"
 					alt="architecture"
@@ -22,7 +25,7 @@ export default function Services() {
 						immersing ourselves in our client's worlds to understand their needs
 						in their context
 					</p>
-					<Link href={"/"}>
+					<Link href={"#gallery"}>
 						<button className="border-primary border-solid border text-primary text-xl  hover:bg-primary hover:text-white font-semibold rounded-sm p-4 mt-8 button">
 							Explore Projects
 						</button>
