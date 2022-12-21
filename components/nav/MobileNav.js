@@ -23,7 +23,7 @@ export default function MobileNav({ isNavOpen, setIsNavOpen }) {
 				>
 					<div className="flex justify-between">
 						<Link href={"/"}>
-							<Image src="/logo.jpg" alt="anisarp" width="100" height="50" />{" "}
+							<Image src="/logo.png" alt="anisarp" width="100" height="50" />{" "}
 						</Link>
 						<AiOutlineClose
 							className="text-white text-xl hover:animate-spin mt-2 cursor-pointer"
