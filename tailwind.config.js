@@ -19,6 +19,10 @@ module.exports = {
 			fontFamily: {
 				Poppins: ["Poppins", "sans-serif"],
 			},
+			backgroundImage: {
+				"gradient-cc":
+					"radial-gradient(rgba(196,59,151,.4),rgba(255,255,255,0.8))",
+			},
 		},
 	},
 	plugins: [],
