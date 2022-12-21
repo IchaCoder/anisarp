@@ -14,7 +14,7 @@ export default function () {
 				<div>
 					<h2 className="text-4xl base:5xl font-semibold ml-8 mt-4">
 						Check Out Our <br />{" "}
-						<span className="text-[rgba(0,0,0,0.6)]">Beautify Gallery</span>
+						<span className="text-[rgba(0,0,0,0.6)]">Beautiful Gallery</span>
 					</h2>
 					<div className="w-52 sm:w-64 h-1 mt-2 ml-8 bg-primary "></div>
 				</div>
