@@ -25,7 +25,7 @@ export default function Services() {
 						immersing ourselves in our client's worlds to understand their needs
 						in their context
 					</p>
-					<Link href={"/"}>
+					<Link href={"#gallery"}>
 						<button className="border-primary border-solid border text-primary text-xl  hover:bg-primary hover:text-white font-semibold rounded-sm p-4 mt-8 button">
 							Explore Projects
 						</button>

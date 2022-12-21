@@ -55,7 +55,7 @@ export default function Nav() {
 					href="tel:+233246251086"
 					className="hidden md:flex items-center hover:tracking-wide transition-all duration-200 ease-linear"
 				>
-					<FaPhoneAlt /> +233-246-251-86
+					<FaPhoneAlt /> +233-246-251-086
 				</a>
 				<FiMenu
 					className="md:hidden text-3xl self-center cursor-pointer flex"

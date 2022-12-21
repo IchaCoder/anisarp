@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const Hero = () => (
 	<section className="max-w-[90%] md:max-w-[80%] flex lg:flex-row flex-col-reverse justify-between gap-16 mx-auto mt-10  base:mt-20">
@@ -20,7 +19,7 @@ const Hero = () => (
 		<img
 			src="/hero_img.jpeg"
 			alt="building"
-			className="-mr-36 w-full lg:w-[600px] h-max"
+			className="-mr-20 w-full lg:w-[600px] h-max"
 		/>
 	</section>
 );
