@@ -70,7 +70,7 @@ const Footer = () => {
 					Made with{" "}
 					<span
 						className="ml-2 flex items-center text-2xl cursor-pointer"
-						title="NextJs"
+						title="NextJS"
 					>
 						<TbBrandNextjs />
 					</span>{" "}
