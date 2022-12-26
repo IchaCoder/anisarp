@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Hero from "../components/hero/Hero";
 import Nav from "../components/nav/Nav";
 import Services from "../components/service/Services";
@@ -12,7 +11,7 @@ import ScrollToTop from "../components/scroll-to-top/ScrollToTop";
 
 export default function Home() {
 	return (
-		<div className="font-Poppins">
+		<div className="font-Poppins overflow-hidden">
 			<Head>
 				<title>Anisarp Architectural & Construction</title>
 				<meta
