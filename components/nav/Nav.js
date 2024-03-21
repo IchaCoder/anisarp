@@ -20,7 +20,7 @@ export default function Nav() {
 			className="bg-primary"
 		>
 			<chakra.nav
-				maxW={"1300px"}
+				maxW={"1200px"}
 				mx={"auto"}
 				py={2}
 				px={4}
@@ -31,13 +31,13 @@ export default function Nav() {
 					<Link href={"/"}>
 						<Image
 							src="/logo.png"
-							className="w-[60px] sm:w-auto"
+							className="w-[60px] sm:w-[80px]"
 							alt="anisarp"
 							width="100"
 							height="50"
 						/>
 					</Link>
-					<span className="font-extrabold self-center text-lg md:text-2xl sm:text-3xl tracking-widest">
+					<span className="font-extrabold self-center text-lg md:text-xl sm:text-3xl tracking-widest">
 						ANISARP
 					</span>
 				</div>
