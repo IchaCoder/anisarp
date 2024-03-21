@@ -19,20 +19,16 @@ export default function MobileNav({ isNavOpen, setIsNavOpen }) {
 					initial="hidden"
 					animate="visible"
 					variants={variants}
-					className="mx-auto p-4 w-[90%] -mt-20 z-40 relative rounded flex flex-col bg-primary text-white"
+					w="full"
+					pos={"absolute"}
+					display={{ base: "block", lg: "none" }}
+					bgColor={"#fff"}
+					borderWidth={1}
+					className="flex flex-col text-white pb-4"
 				>
-					<div className="flex justify-between">
-						<Link href={"/"}>
-							<Image src="/logo.png" alt="anisarp" width="100" height="50" />{" "}
-						</Link>
-						<AiOutlineClose
-							className="text-white text-xl hover:animate-spin mt-2 cursor-pointer"
-							onClick={() => setIsNavOpen(false)}
-						/>
-					</div>
 					<Link
 						href="/"
-						className="py-2 hover:tracking-widest text-[15px] transition-all duration-300 ease-linear pl-4 mt-4"
+						className="py-2 hover:tracking-widest text-[15px] transition-all duration-300 ease-linear pl-4"
 						onClick={() => setIsNavOpen(false)}
 					>
 						Home

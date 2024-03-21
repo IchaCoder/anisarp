@@ -1,21 +1,43 @@
 import Link from "next/link";
 import { FaPhoneAlt } from "react-icons/fa";
-import { FiMenu } from "react-icons/fi";
 import Image from "next/image";
 import MobileNav from "./MobileNav";
 import { useState } from "react";
+import { Box, Button, HStack, IconButton, chakra } from "@chakra-ui/react";
+import { AiOutlineClose } from "react-icons/ai";
+import { CgMenuRightAlt } from "react-icons/cg";
 
 export default function Nav() {
 	const [isNavOpen, setIsNavOpen] = useState(false);
 
 	return (
-		<>
-			<nav className="flex justify-around bg-primary p-2 text-whiteF">
+		<Box
+			as="section"
+			w="full"
+			position={"sticky"}
+			top={0}
+			zIndex={99}
+			className="bg-primary"
+		>
+			<chakra.nav
+				maxW={"1300px"}
+				mx={"auto"}
+				py={2}
+				px={4}
+				color={"white"}
+				className="flex justify-between items-center relative"
+			>
 				<div className="flex">
 					<Link href={"/"}>
-						<Image src="/logo.png" alt="anisarp" width="100" height="50" />
+						<Image
+							src="/logo.png"
+							className="w-[60px] sm:w-auto"
+							alt="anisarp"
+							width="100"
+							height="50"
+						/>
 					</Link>
-					<span className="font-extrabold self-center text-2xl sm:text-3xl tracking-widest">
+					<span className="font-extrabold self-center text-lg md:text-2xl sm:text-3xl tracking-widest">
 						ANISARP
 					</span>
 				</div>
@@ -51,18 +73,46 @@ export default function Nav() {
 						About
 					</Link>
 				</div>
-				<a
+				<Button
+					as={"a"}
+					variant={"outline"}
+					borderRadius={0}
+					borderColor={"white"}
+					color={"white"}
+					px={6}
 					href="tel:+233246251086"
-					className="hidden md:flex items-center hover:tracking-wide transition-all duration-200 ease-linear"
+					leftIcon={<FaPhoneAlt />}
+					display={{ base: "none", md: "flex" }}
 				>
-					<FaPhoneAlt /> +233-246-251-086
-				</a>
-				<FiMenu
-					className="md:hidden text-3xl self-center cursor-pointer flex"
-					onClick={() => setIsNavOpen(true)}
-				/>
-			</nav>
+					Let's Talk
+				</Button>
+				<HStack display={{ base: "flex", md: "none" }}>
+					<IconButton
+						backgroundColor={"transparent"}
+						as={"a"}
+						color={"white"}
+						href="tel:+233246251086"
+						icon={<FaPhoneAlt fontSize={"20px"} />}
+						_hover={{ transform: "scale(1.2)" }}
+					/>
+					<IconButton
+						variant="ghost"
+						_hover={{ transform: "scale(1.2)" }}
+						color={"white"}
+						icon={
+							isNavOpen ? (
+								<AiOutlineClose fontSize={"20px"} />
+							) : (
+								<CgMenuRightAlt fontSize="2rem" />
+							)
+						}
+						aria-label="Open Menu"
+						alignSelf="center"
+						onClick={() => setIsNavOpen(!isNavOpen)}
+					/>
+				</HStack>
+			</chakra.nav>
 			<MobileNav isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
-		</>
+		</Box>
 	);
 }
