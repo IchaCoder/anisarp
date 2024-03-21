@@ -2,6 +2,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { AiOutlineClose } from "react-icons/ai";
+import { Box } from "@chakra-ui/react";
 
 const variants = {
 	visible: {
@@ -15,16 +16,15 @@ export default function MobileNav({ isNavOpen, setIsNavOpen }) {
 	return (
 		<>
 			{isNavOpen && (
-				<motion.div
+				<Box
 					initial="hidden"
 					animate="visible"
 					variants={variants}
 					w="full"
 					pos={"absolute"}
-					display={{ base: "block", lg: "none" }}
-					bgColor={"#fff"}
-					borderWidth={1}
-					className="flex flex-col text-white pb-4"
+					display={{ base: "flex", lg: "none" }}
+					bgColor={"brand.primary"}
+					className="flex-col text-white pb-4"
 				>
 					<Link
 						href="/"
@@ -42,11 +42,11 @@ export default function MobileNav({ isNavOpen, setIsNavOpen }) {
 						Services
 					</Link>
 					<Link
-						href="#gallery"
+						href="#projects"
 						className="py-2 text-[15px] hover:tracking-widest transition-all duration-300 ease-linear pl-4"
 						onClick={() => setIsNavOpen(false)}
 					>
-						Gallery
+						Projects
 					</Link>
 					<Link
 						href="#contact"
@@ -62,7 +62,7 @@ export default function MobileNav({ isNavOpen, setIsNavOpen }) {
 					>
 						About
 					</Link>
-				</motion.div>
+				</Box>
 			)}
 		</>
 	);

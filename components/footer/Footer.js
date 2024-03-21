@@ -1,20 +1,36 @@
 import Link from "next/link";
 import Image from "next/image";
-import { TbBrandNextjs } from "react-icons/tb";
+import {
+	ButtonGroup,
+	Container,
+	IconButton,
+	Stack,
+	Text,
+	chakra,
+} from "@chakra-ui/react";
+import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
 	return (
-		<>
-			<footer className="p-8 bg-[rgb(49,49,49)] flex flex-col md:flex-row gap-8 justify-between text-white">
-				<div className="flex justify-center md:justify-start">
-					<Link href={"/"}>
-						<Image src="/logo.png" alt="anisarp" width="100" height="50" />
-					</Link>
-					<span className="font-extrabold self-center text-2xl sm:text-3xl tracking-widest">
-						ANISARP
-					</span>
-				</div>
-				<div className="self-center grid grid-cols-3 gap-4 sm:grid-cols-5">
+		<Container
+			as={"footer"}
+			bgColor={"brand.black"}
+			w={"full"}
+			margin={0}
+			maxW={"full"}
+			px={0}
+		>
+			<chakra.div
+				display={"flex"}
+				paddingY={8}
+				px={4}
+				maxW={"1200px"}
+				justifyContent={"space-between"}
+				mx={"auto"}
+			>
+				<div className="grid text-white text-sm">
 					<Link
 						className="px-3 hover:text-[rgba(255,255,255,.5)] transition-all duration-200 ease-linear"
 						href="/"
@@ -29,9 +45,9 @@ const Footer = () => {
 					</Link>
 					<Link
 						className="px-3 hover:text-[rgba(255,255,255,.5)] transition-all duration-200 ease-linear"
-						href="#gallery"
+						href="#projects"
 					>
-						Gallery
+						Projects
 					</Link>
 					<Link
 						className="px-3 hover:text-[rgba(255,255,255,.5)] transition-all duration-200 ease-linear"
@@ -46,37 +62,75 @@ const Footer = () => {
 						About
 					</Link>
 				</div>
-			</footer>
-			<div className="flex flex-col text-lg flex-wrap gap-2 p-2">
-				<a
-					href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="flex self-center"
-				>
-					Powered by{" "}
-					<span>
+				<Stack>
+					<Link href={"/"} className="grid justify-items-center self-center">
 						<Image
-							src="/vercel.svg"
-							alt="Vercel Logo"
-							className="ml-2 inline"
-							width={72}
-							height={16}
+							src="/logo.png"
+							alt="anisarp"
+							width="100"
+							height="50"
+							className="h-14 self-end"
 						/>
-					</span>
-				</a>
-
-				<div className="self-center flex">
-					Made with{" "}
-					<span
-						className="ml-2 flex items-center text-2xl cursor-pointer"
-						title="NextJS"
-					>
-						<TbBrandNextjs />
-					</span>{" "}
-				</div>
-			</div>
-		</>
+						<span className="font-extrabold self-start text-white text-2xl">
+							ANISARP
+						</span>
+					</Link>
+					<Text color={"white"}>
+						Copyright &copy; Anisarp {new Date().getFullYear()}
+					</Text>
+					<Text color={"white"} textAlign={"center"}>
+						Kumasi - Ghana
+					</Text>
+				</Stack>
+				<Stack variant="solid">
+					<IconButton
+						as="a"
+						target={"_blank"}
+						rel="noreferrer"
+						href="#"
+						aria-label="WhatsApp"
+						icon={<BsWhatsapp fontSize="1.25rem" color="#fefefe" />}
+						background="black"
+					/>
+					<IconButton
+						as="a"
+						target={"_blank"}
+						rel="noreferrer"
+						href="#"
+						aria-label="Facebook"
+						icon={<BsFacebook fontSize="1.25rem" color="#fefefe" />}
+						background="black"
+					/>
+					<IconButton
+						as="a"
+						target={"_blank"}
+						rel="noreferrer"
+						href="#"
+						aria-label="Instagram"
+						icon={<BsInstagram fontSize="1.25rem" color="#fefefe" />}
+						background="black"
+					/>
+					<IconButton
+						as="a"
+						target={"_blank"}
+						rel="noreferrer"
+						href="#"
+						aria-label="Twitter"
+						icon={<FaXTwitter fontSize="1.25rem" color="#fefefe" />}
+						background="black"
+					/>
+					<IconButton
+						as="a"
+						target={"_blank"}
+						rel="noreferrer"
+						href="#"
+						aria-label="TikTok"
+						icon={<FaTiktok fontSize="1.25rem" color="#fefefe" />}
+						background="black"
+					/>
+				</Stack>
+			</chakra.div>
+		</Container>
 	);
 };
 

@@ -7,7 +7,7 @@ export default function () {
 
 	return (
 		<section
-			id="gallery"
+			id="projects"
 			className="mt-32 max-w-[90%] md:max-w-[80%] sm:mt-80 lg:mt-32 mx-auto p-4 bg-gray-200"
 		>
 			<div className="sm:flex justify-between">

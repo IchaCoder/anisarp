@@ -5,7 +5,7 @@ import { slideUp } from "../../animation/variants";
 
 const WhatWeDo = () => {
 	return (
-		<Box className="bg-gray-300 mt-20 sm:mt-80">
+		<Box className="bg-gray-300 mt-20">
 			<Box maxW={"1200px"} mx={"auto"} px={4} py={14}>
 				<Stack
 					direction="row"
@@ -50,7 +50,7 @@ const WhatWeDo = () => {
 						variants={slideUp}
 						initial="hidden"
 						whileInView="show"
-						className="mt-2 flex-[.9] 3xl:flex-[.8] text-base lg:text-2xl"
+						className="mt-2 flex-[.9] 3xl:flex-[.8] text-base lg:text-2xl text-center md:text-left"
 					>
 						We address requirements and constraints with the right mix of
 						analytical thinking, creativity and artistry - designing buildings

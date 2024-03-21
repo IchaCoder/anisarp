@@ -8,10 +8,11 @@ const Hero = () => (
 		backgroundImage={"/hero.webp"}
 		bgRepeat={"no-repeat"}
 		bgSize={"cover"}
-		h={{ base: "350px", md: "700px" }}
+		h={{ base: "450px", md: "700px" }}
 		display={"grid"}
 		placeItems={"center"}
 		position={"relative"}
+		py={8}
 	>
 		<Box
 			position={"absolute"}
@@ -26,12 +27,12 @@ const Hero = () => (
 				initial="hidden"
 				whileInView="show"
 			>
-				<h1 className="text-4xl sm:text-7xl font-bold">
+				<h1 className="text-4xl md:text-7xl font-bold">
 					Architecture that recognizes
 					<br />
 					all your sensibilities
 				</h1>
-				<h3 className="pt-7 text-base sm:text-xl">
+				<h3 className="pt-7 text-base md:text-xl">
 					Welcome to Anisarp, a reliable business partner on your path to
 					building a better looking future for all.
 				</h3>

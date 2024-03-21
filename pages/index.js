@@ -12,7 +12,8 @@ import WhatWeDo from "../components/what-we-do";
 
 export default function Home() {
 	return (
-		<div className="font-Poppins overflow-hidden">
+		// <div className="font-Poppins overflow-hidden">
+		<>
 			<Head>
 				<title>Anisarp Architectural & Construction</title>
 				<meta
@@ -26,22 +27,21 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="">
-				<Nav />
-				<Hero />
-				{/* <SliderSection /> */}
-				<Services />
-				<WhatWeDo />
-				<Gallery />
-				<section className="mt-32 mb-20 bg-gradient-cc" id="contact">
-					<div className="max-w-[90%] md:max-w-[80%] mx-auto flex flex-col sm:flex-row gap-8 md:gap-14 justify-between pb-8">
-						<NewsLetter />
-						<ContactUs />
-					</div>
-				</section>
-			</main>
+			<Nav />
+			<Hero />
+			{/* <SliderSection /> */}
+			<Services />
+			<WhatWeDo />
+			<Gallery />
+			<section className="mt-32 mb-20 bg-gradient-cc" id="contact">
+				<div className="max-w-[90%] md:max-w-[80%] mx-auto flex flex-col sm:flex-row gap-8 md:gap-14 justify-between pb-8">
+					<NewsLetter />
+					<ContactUs />
+				</div>
+			</section>
 			<Footer />
 			<ScrollToTop />
-		</div>
+		</>
+		// </div>
 	);
 }
