@@ -5,8 +5,8 @@ import "../styles/test.css";
 const colors = {
 	brand: {
 		// you can add more custom colors here
-		nav: "#142B33",
-		blue: "#1E5AF9",
+		primary: "rgb(196,59,151)",
+		black: "#0E1017",
 	},
 };
 

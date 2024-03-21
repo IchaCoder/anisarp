@@ -18,12 +18,12 @@ export default function Nav() {
 			top={0}
 			zIndex={99}
 			className="bg-primary"
+			shadow={"lg"}
 		>
 			<chakra.nav
 				maxW={"1200px"}
 				mx={"auto"}
-				py={2}
-				px={4}
+				p={4}
 				color={"white"}
 				className="flex justify-between items-center relative"
 			>
@@ -83,6 +83,7 @@ export default function Nav() {
 					href="tel:+233246251086"
 					leftIcon={<FaPhoneAlt />}
 					display={{ base: "none", md: "flex" }}
+					_hover={{ bgColor: "white", color: "brand.primary", border: "none" }}
 				>
 					Let's Talk
 				</Button>

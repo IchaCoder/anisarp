@@ -20,7 +20,7 @@ const ServiceGroupOne = () => {
 	return (
 		<section
 			id="about"
-			className="max-w-[90%] md:max-w-[80%] mx-auto mt-32 lg:flex flex-row-reverse relative"
+			className="max-w-[1200px] px-4 mx-auto mt-32 lg:flex flex-row-reverse relative"
 		>
 			<motion.div variants={boxVariantTwo} initial="hidden" animate={control}>
 				<Image
