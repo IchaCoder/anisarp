@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { Box, Stack, Text } from "@chakra-ui/react";
+import { Box, Stack, chakra } from "@chakra-ui/react";
 import { slideUp } from "../../animation/variants";
 
 const ServiceGroupOne = () => {
@@ -14,24 +14,28 @@ const ServiceGroupOne = () => {
 				justifyContent={"space-between"}
 				gap={4}
 			>
-				<Image
-					src="/assets/service_8.jpeg"
-					alt="architecture"
-					width={"100"}
-					height={"100"}
-					className="w-[100vw] sm:w-[450px] 3xl:w-[700px] lg:h-[350px] object-cover"
-					as={motion.img}
+				<chakra.div
+					as={motion.div}
 					viewport={{ once: true }}
 					variants={slideUp}
 					initial="hidden"
 					whileInView="show"
-				/>
+				>
+					<Image
+						src="/assets/service_8.jpeg"
+						alt="architecture"
+						width={"100"}
+						height={"100"}
+						className="w-[100vw] sm:w-[450px] 3xl:w-[900px] lg:h-[350px] object-cover"
+					/>
+				</chakra.div>
+
 				<motion.div
 					viewport={{ once: true }}
 					variants={slideUp}
 					initial="hidden"
 					whileInView="show"
-					className="mt-2 text-base lg:text-2xl"
+					className="mt-2 text-base lg:text-2xl lg:w-[800px]"
 				>
 					<h2 className="font-bold text-3xl sm:text-5xl text-center md:text-left">
 						Transforming Your Ideas <br />{" "}

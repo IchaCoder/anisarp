@@ -81,6 +81,14 @@ const Footer = () => {
 					<Text color={"white"} textAlign={"center"}>
 						Kumasi - Ghana
 					</Text>
+					<Text
+						as={"a"}
+						href="tel+:+233246251086"
+						color={"blue.400"}
+						textAlign={"center"}
+					>
+						0246251086
+					</Text>
 				</Stack>
 				<Stack variant="solid">
 					<IconButton

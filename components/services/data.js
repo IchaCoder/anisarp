@@ -1,4 +1,4 @@
-const items = [
+const services = [
 	{ name: "Consultancy Services", imageUrl: "/assets/service_1.jpeg" },
 	{ name: "Free Estate Development", imageUrl: "/assets/service_3.jpeg" },
 	{ name: "Architectural Design", imageUrl: "/assets/service_4.jpeg" },
@@ -9,4 +9,4 @@ const items = [
 	{ name: "Contract Administration", imageUrl: "/assets/service_8.jpeg" },
 ];
 
-export default items;
+export default services;

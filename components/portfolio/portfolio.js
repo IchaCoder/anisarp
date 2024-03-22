@@ -1,6 +1,6 @@
 import ServiceGroupOne from "./ServiceGroupOne";
 
-export default function Services() {
+export default function Portfolio() {
 	return (
 		<>
 			<ServiceGroupOne />
