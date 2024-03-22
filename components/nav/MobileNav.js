@@ -49,13 +49,6 @@ export default function MobileNav({ isNavOpen, setIsNavOpen }) {
 						Projects
 					</Link>
 					<Link
-						href="#contact"
-						className="py-2 text-[15px] hover:tracking-widest transition-all duration-300 ease-linear pl-4"
-						onClick={() => setIsNavOpen(false)}
-					>
-						Contact
-					</Link>
-					<Link
 						href="#about"
 						className="py-2 text-[15px] hover:tracking-widest transition-all duration-300 ease-linear pl-4"
 						onClick={() => setIsNavOpen(false)}

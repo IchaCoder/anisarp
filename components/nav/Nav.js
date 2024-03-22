@@ -62,12 +62,6 @@ export default function Nav() {
 					</Link>
 					<Link
 						className="px-3 hover:text-[rgba(255,255,255,.5)] transition-all duration-200 ease-linear"
-						href="#contact"
-					>
-						Contact
-					</Link>
-					<Link
-						className="px-3 hover:text-[rgba(255,255,255,.5)] transition-all duration-200 ease-linear"
 						href="#about"
 					>
 						About
